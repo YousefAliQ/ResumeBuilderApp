@@ -1,5 +1,6 @@
 package edu.mum.resumebuilder
 
+import android.content.Context
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -13,6 +14,9 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
+import android.view.View
+import android.widget.Toast
+import kotlinx.android.synthetic.main.fragment_technical_skills.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -54,4 +58,5 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 }

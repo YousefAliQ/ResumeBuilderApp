@@ -18,9 +18,9 @@
         tools:layout="@layout/fragment_contact_info" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_personal_experience"
         android:name="edu.mum.resumebuilder.ui.personal.PersonalExperienceFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_personal_experience"
         tools:layout="@layout/fragment_personal_experience" />
 
     <fragment
@@ -30,9 +30,9 @@
         tools:layout="@layout/fragment_academic" />
 
     <fragment
-        android:id="@+id/nav_share"
+        android:id="@+id/nav_tech_skills"
         android:name="edu.mum.resumebuilder.ui.tech.TechnicalSkillsFragment"
-        android:label="@string/menu_share"
+        android:label="@string/menu_tech_skills"
         tools:layout="@layout/fragment_technical_skills" />
 
     <fragment
@@ -40,4 +40,10 @@
         android:name="edu.mum.resumebuilder.ui.core.CoreCompetenciesFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_core_competencies" />
+
+    <fragment
+        android:id="@+id/nav_visa_status"
+        android:name="edu.mum.resumebuilder.ui.visa.VisaStatusFragment"
+        android:label="@string/menu_visa_status"
+        tools:layout="@layout/fragment_visa_status" />
 </navigation>

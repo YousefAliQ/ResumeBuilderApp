@@ -22,10 +22,10 @@ class ContactInfoFragment : Fragment() {
         galleryViewModel =
             ViewModelProviders.of(this).get(GalleryViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_contact_info, container, false)
-        val textView: TextView = root.findViewById(R.id.text_gallery)
+        /*val textView: TextView = root.findViewById(R.id.text_gallery)
         galleryViewModel.text.observe(this, Observer {
             textView.text = it
-        })
+        })*/
         return root
     }
 }
