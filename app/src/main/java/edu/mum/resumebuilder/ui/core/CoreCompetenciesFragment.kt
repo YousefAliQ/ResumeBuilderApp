@@ -12,15 +12,15 @@ import edu.mum.resumebuilder.R
 
 class CoreCompetenciesFragment : Fragment() {
 
-    private lateinit var sendViewModel: SendViewModel
+    //private lateinit var sendViewModel: SendViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        sendViewModel =
-            ViewModelProviders.of(this).get(SendViewModel::class.java)
+        //sendViewModel =
+         //   ViewModelProviders.of(this).get(SendViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_core_competencies, container, false)
         /*val textView: TextView = root.findViewById(R.id.text_send)
         sendViewModel.text.observe(this, Observer {

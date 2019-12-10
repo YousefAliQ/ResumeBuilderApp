@@ -52,8 +52,6 @@ class TechnicalSkillsFragment : Fragment() {
 
             // To write a data using SharedPreferences Object by calling edit, return Editor object
 
-
-
             val spe = spf?.edit()
 
 

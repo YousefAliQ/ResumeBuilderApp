@@ -12,10 +12,17 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_contact"
         android:name="edu.mum.resumebuilder.ui.contactinfo.ContactInfoFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_contact"
         tools:layout="@layout/fragment_contact_info" />
+
+    <fragment
+        android:id="@+id/nav_corecompetencies"
+        android:name="edu.mum.resumebuilder.ui.core.CoreCompetenciesFragment"
+        android:label="@string/menu_corecompetencies"
+        tools:layout="@layout/fragment_core_competencies"
+        tools:ignore="DuplicateIds" />
 
     <fragment
         android:id="@+id/nav_personal_experience"
