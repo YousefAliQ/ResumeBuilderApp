@@ -39,20 +39,20 @@ class ContactInfoFragment : Fragment() {
             var email:String?=edit_menu_email.text.toString()
             var linkedin:String?=edit_contact_linkedin.text.toString()
 
-            val spf = activity?.getSharedPreferences("contactinfo", Context.MODE_PRIVATE)
+            val Sharedpreference = activity?.getSharedPreferences("contactinfo", Context.MODE_PRIVATE)
             // To write a data using SharedPreferences Object by calling edit, return Editor object
-            val spe = spf?.edit()
-            spe?.putString("name", name)
-            spe?.putString("phone", phone)
-            spe?.putString("address", address)
-            spe?.putString("email", email)
-            spe?.putString("linkedin", linkedin)
-            spe?.apply()
+            val edit = Sharedpreference?.edit()
+            edit?.putString("name", name)
+            edit?.putString("phone", phone)
+            edit?.putString("address", address)
+            edit?.putString("email", email)
+            edit?.putString("linkedin", linkedin)
+            edit?.apply()
             Toast.makeText(activity,"Data Saved",Toast.LENGTH_LONG).show()
             clearText()
         }
         root.btn_contact_show.setOnClickListener(){
-            var spf:SharedPreferences?=null
+            var sharedPreferences:SharedPreferences?=null
             var name:String?=null
             var phone:String?=null
             var address:String?=null
@@ -60,12 +60,12 @@ class ContactInfoFragment : Fragment() {
             var linkedin:String?=null
             var merge:String?=null
 
-            spf=activity?.getSharedPreferences("contactinfo",Context.MODE_PRIVATE)
-            name=spf?.getString("name",null)
-            phone=spf?.getString("phone",null)
-            address=spf?.getString("address",null)
-            email=spf?.getString("email",null)
-            linkedin=spf?.getString("linkedin",null)
+            sharedPreferences=activity?.getSharedPreferences("contactinfo",Context.MODE_PRIVATE)
+            name=sharedPreferences?.getString("name",null)
+            phone=sharedPreferences?.getString("phone",null)
+            address=sharedPreferences?.getString("address",null)
+            email=sharedPreferences?.getString("email",null)
+            linkedin=sharedPreferences?.getString("linkedin",null)
 
             merge="Name :" + name + "\n" + "Phone # :" + phone + "\n" + "Email :" + email + "\n" +"Address :" + address + "\n" + "Email :" + email + "\n" +"LinkedIn :" + linkedin + "\n"
            if (merge!=null)

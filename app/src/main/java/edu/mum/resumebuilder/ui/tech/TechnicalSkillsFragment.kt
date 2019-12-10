@@ -20,7 +20,6 @@ class TechnicalSkillsFragment : Fragment() {
 
     private lateinit var shareViewModel: TechnicalSkillsModel
     private var selectedType= "General"
-
     val types = arrayOf("General","Web", "Web Services", "Web and Application Servers", "Frameworks", "Databases", "Design Patterns", "SDLC", "Tools", "Platforms", "Big Data")
 
     override fun onCreateView(
@@ -53,7 +52,6 @@ class TechnicalSkillsFragment : Fragment() {
             // To write a data using SharedPreferences Object by calling edit, return Editor object
 
             val spe = spf?.edit()
-
 
             // Using put method to write the data in SharedPreferences
             spe?.putString(selectedType, spf.getString(selectedType, "")   + et1.text.toString() + ", ")

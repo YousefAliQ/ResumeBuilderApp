@@ -12,11 +12,17 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/nav_academic"
+        android:name="edu.mum.resumebuilder.ui.academic.AcademicFragment"
+        android:label="@string/menu_academic"
+        tools:layout="@layout/fragment_academic" />
+
+    <fragment
         android:id="@+id/nav_contact"
         android:name="edu.mum.resumebuilder.ui.contactinfo.ContactInfoFragment"
         android:label="@string/menu_contact"
-        tools:layout="@layout/fragment_contact_info" />
-
+        tools:layout="@layout/fragment_contact_info"
+        tools:ignore="DuplicateIds" />
     <fragment
         android:id="@+id/nav_corecompetencies"
         android:name="edu.mum.resumebuilder.ui.core.CoreCompetenciesFragment"
@@ -30,11 +36,6 @@
         android:label="@string/menu_personal_experience"
         tools:layout="@layout/fragment_personal_experience" />
 
-    <fragment
-        android:id="@+id/nav_tools"
-        android:name="edu.mum.resumebuilder.ui.academic.EducationFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_academic" />
 
     <fragment
         android:id="@+id/nav_tech_skills"
